@@ -127,9 +127,9 @@ ol {
   font-size: 18px; /* 4c.1 in figma 18px */
   line-height: 25px; /* 4c.1 */
   border: none; /* 4c.2 */
-  border-top: 1px solid #fff; /* 4c.2 */
-  border-bottom: 1px solid #fff; /* 4c.2 */
-  color: #fff; /* 4c.3 */
+  border-top: 1px solid currentColor; /* 4c.2 */
+  border-bottom: 1px solid currentColor; /* 4c.2 */
+  color: currentColor; /* 4c.3 */
   background-color: transparent; /* 4c.5 */
   width: 225px;
 }
@@ -150,14 +150,14 @@ ol {
 .search-form__pseudo-checkbox {
   width: 19px; /* 4d.1 */
   height: 19px; /* 4d.1 */
-  border: 1px solid #fff; /* 4d.1 */
+  border: 1px solid currentColor; /* 4d.1 */
   padding: 1px; /* 4d.1 */
 }
 
 .search-form__pseudo-checkbox::after {
   content: ''; /* 4d.2 */
   display: block; /* 4d.2 */
-  background-color: #fff; /* 4d.2 */
+  background-color: currentColor; /* 4d.2 */
   width: 100%; /* 4d.2 */
   height: 100%; /* 4d.2 */
   opacity: 0; /* 4d.2 */
@@ -170,10 +170,10 @@ ol {
 }
 
 .button {
-  font: 700 18px/32px 'Fira Sans Condensed'; /* 5.1 */
-  color: #fff; /* 5.1 */
+  font: 700 18px/32px 'Fira Sans Condensed', sans-serif; /* 5.1 */
+  color: currentColor; /* 5.1 */
   background-color: transparent; /* 5.1 */
-  border: 1px solid #fff; /* 5.1 */
+  border: 1px solid currentColor; /* 5.1 */
   cursor: pointer; /* 7 */
 }
 
@@ -190,7 +190,7 @@ ol {
 }
 
 .title {
-  font: 700 75px/70px Oswald; /* 3.2 */
+  font: 700 75px/70px Oswald,sans-serif; /* 3.2 */
   text-transform: uppercase; /* 3.2 */
   margin-bottom: 23px; /* 3.2 */
 }
@@ -223,7 +223,7 @@ ol {
 
 .content__card-link {
   display: block; /* 6 */
-  color: #fff; /* 3.3 */
+  color: currentColor; /* 3.3 */
   text-decoration: none; /* 3.3 */
   text-underline-offset: 2px; /* need correct */
   cursor: pointer; /* 7 */
@@ -241,7 +241,7 @@ ol {
 }
 
 .content__video-card-title {
-  font: 700 30px/34px Oswald; /* 3.4 */
+  font: 700 30px/34px Oswald,sans-serif; /* 3.4 */
   text-transform: uppercase;
   /*  white-space: nowrap; */
   overflow: hidden;
@@ -270,7 +270,7 @@ ol {
 
 .more-button {
   width: 390px /*100%*/; /* 5.4 */
-  margin: 0 1px;
+  margin-left: 2px; /* исправление обрезания обводки */
 }
 
 /* states of the elements */
@@ -294,5 +294,5 @@ ol {
 .search-form__label:has(:focus-visible), /* 4d.5 */
 .button:focus-visible { /* 5.5.3 */
   outline-offset: 1px;
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
 }
